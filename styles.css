@@ -1,0 +1,163 @@
+:root {
+    --clr-400: hsl(0, 0%, 17%);
+    --clr-300: hsl(0, 0%, 25%);
+    --clr-200: hsl(0, 0%, 30%);
+    --clr-100: hsl(0, 0%, 90%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--clr-100);
+    color: var(--clr-200);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/* Main */
+h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--clr-400);
+}
+
+h2 {
+    font-weight: 700;
+    line-height: 1;
+    color: var(--clr-300);
+}
+
+h3 {
+    font-size: .875rem;
+    color: var(--clr-300);
+    line-height: 1;
+}
+
+p {
+    font-size: .925rem;
+    line-height: 1.4;
+}
+
+a {
+    font-size: .925rem;
+    line-height: 1.4;
+    color: var(--clr-400);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+    font-size: 1rem;
+}
+
+
+/* Containers */
+.container {
+    max-width: 37.5rem;
+    margin: 6em auto;
+    padding: 0 1.5em;
+}
+
+.row {
+    margin: 2em 0;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 1em;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+
+/* Name */
+.main-picture {
+    border-radius: 100vmax;
+}
+
+
+/* About */
+.about-head {
+    margin-bottom: .4rem;
+}
+
+/* Work Experience */
+.work {
+    margin: 2em 0 2.5em;
+}
+
+.work-exp {
+    display: grid;
+    gap: .5rem;
+}
+
+.work-name {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+
+/* Projects */
+.projects {
+    margin: 2em 0 2.5em;
+}
+
+.project {
+    display: grid;
+    gap: .5rem;
+}
+
+.project img {
+    margin-left: .1em;
+    max-width: 8rem;
+    object-fit: contain;
+}
+
+.project-name {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+
+/* Links */
+.links {
+    margin: 2em 0 2.5em;
+}
+
+.link-name {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+
+@media screen and (max-width:33em) {
+    .collapse {
+        grid-template-columns: 1fr;
+    }
+    .no-gap {
+        gap: 0;
+    }
+    .date {
+        margin-bottom: .4rem;
+    }
+}
